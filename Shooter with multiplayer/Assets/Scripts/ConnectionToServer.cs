@@ -18,5 +18,6 @@ public class ConnectionToServer : MonoBehaviourPunCallbacks
     public override void OnJoinedLobby()
     {
         Debug.Log($"Connected To Lobby!");
+        UIManager.Instance.OpenPanel("MenuPanel");
     }
 }
